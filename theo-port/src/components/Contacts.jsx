@@ -13,7 +13,7 @@ function Contacts(){
 
 
         try {
-            const response = await fetch("http://localhost:5000/send-email", {
+            const response = await fetch("https://theo-portfolio-phi.vercel.app/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
