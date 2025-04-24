@@ -1,4 +1,6 @@
 .hero{
+    background: url('../public/theo.jpg')center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,18 +8,24 @@
     min-height: 100vh;
     padding: 2rem;
     background-color: linear-gradient(to right, #e0f7fa, #ffffff);
-    color: #333;
+    color: #ADFF2F;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .hero h1{
     font-size: 3rem;
-    font-weight: bold;
+    font-weight:800;
     margin-bottom: 1rem;
 }
 .hero p{
     font-size: 1.2rem;
     max-width: 600px;
     line-height: 1.6;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    color:#ADFF2F;
 }
 .hero button{
     background-color: #ADFF2F;

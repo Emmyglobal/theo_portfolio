@@ -10,17 +10,17 @@ function Projects(){
                 <li>
                     <h3>First one</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias reiciendis nulla facere nam ipsam amet dicta blanditiis iusto a at, modi fugiat sequi consequuntur reprehenderit nostrum velit totam dolor provident.</p>
-                    <img src="" alt="ScreenShot" />
+                    <img src="/theo.jpg" alt="ScreenShot" />
                 </li>
                 <li>
                     <h3>Second one</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias reiciendis nulla facere nam ipsam amet dicta blanditiis iusto a at, modi fugiat sequi consequuntur reprehenderit nostrum velit totam dolor provident.</p>
-                    <img src="" alt="ScreenShot" />
+                    <img src="/theo.jpg" alt="ScreenShot" />
                 </li>
                 <li>
                     <h3>Third one</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias reiciendis nulla facere nam ipsam amet dicta blanditiis iusto a at, modi fugiat sequi consequuntur reprehenderit nostrum velit totam dolor provident.</p>
-                    <img src="" alt="ScreenShot" />
+                    <img src="/theo.jpg" alt="ScreenShot" />
                 </li>
             </ul>
         </section> 
