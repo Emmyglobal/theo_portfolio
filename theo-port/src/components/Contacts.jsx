@@ -2,36 +2,39 @@ import React from "react";
 import '../Contacts.css';
 
 function Contacts(){
-    const handleSubmit = async (e) => {
-        e.preventDefault();
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
 
-        const formData = {
-            name: e.target.name.value,
-            email: e.target.email.value,
-            message: e.target.message.value,
-        };
+    //     const formData = {
+    //         name: e.target.name.value,
+    //         email: e.target.email.value,
+    //         message: e.target.message.value,
+    //     };
 
 
-        try {
-            const response = await fetch("https://theo-portfolio-u.vercel.app/", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData),
-            });
-            const result = await response.json();
-            alert(result.message);
-            e.target.reset();
-        } catch (err) {
-            alert("Failed to send message. Please try again!");
-        }
-    };
+    //     try {
+    //         const response = await fetch("https://theo-portfolio-u.vercel.app/", {
+    //             method: "POST",
+    //             headers: {
+    //                 "Content-Type": "application/json",
+    //             },
+    //             body: JSON.stringify(formData),
+    //         });
+    //         const result = await response.json();
+    //         alert(result.message);
+    //         e.target.reset();
+    //     } catch (err) {
+    //         alert("Failed to send message. Please try again!");
+    //     }
+    // };
     return(
         <>
         <section id="contact" className="contacts">
             <h2>Get in Touch</h2>
-            <form onSubmit={handleSubmit}>
+            <form
+                action="https://formspree.io/f/xvgaogba"
+                method="POST"
+            >
                 <input type="text" name="name" placeholder="Name" required />
                 <input type="email" name="email" placeholder="Email" required />
                 <textarea name="message" placeholder="Message" required></textarea>
