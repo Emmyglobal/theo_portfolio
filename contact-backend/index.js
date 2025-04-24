@@ -6,7 +6,12 @@ require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(cors({
+    origin: "https://theo-portfolio-i.vercel.app", // Your deployed frontend
+    methods: ["POST"],
+    credentials: true,
+  }));
+    
 app.use(express.json());
 
 app.listen(PORT, () => {
