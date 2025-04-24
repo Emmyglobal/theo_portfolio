@@ -13,7 +13,7 @@ function Contacts(){
 
 
         try {
-            const response = await fetch("https://theo-portfolio-phi.vercel.app/", {
+            const response = await fetch("https://theo-portfolio-u.vercel.app/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

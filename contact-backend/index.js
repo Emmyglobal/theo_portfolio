@@ -7,11 +7,11 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-    origin: "https://theo-portfolio-u.vercel.app/", // Your deployed frontend
-    methods: ["POST"],
-    credentials: true,
+    origin: "https://theo-portfolio-five.vercel.app", // frontend domain
+    methods: ["POST", "GET", "OPTIONS"],
+    allowedHeaders: ["Content-Type"],
   }));
-
+  
 app.use(express.json());
 
 app.listen(PORT, () => {
