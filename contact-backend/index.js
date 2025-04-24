@@ -18,8 +18,6 @@ app.listen(PORT, () => {
     console.log(`Your server is running on port ${PORT}`);
 })
 
-app.options('/send-email', cors());
-
 app.post("/send-email", async (req, res) => {
     const { name, email, message } =  req.body;
 
