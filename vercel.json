@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "theo-port/package.json",
+        "use": "@vercel/static-build"
+      },
+      {
+        "src": "contact-backend/index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/contact-backend/(.*)",
+        "dest": "/contact-backend/index.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/theo-port/$1"
+      }
+    ]
+  }  
